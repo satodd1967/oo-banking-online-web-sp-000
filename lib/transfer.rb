@@ -20,8 +20,8 @@ end
 
 def execute_transaction
   if self.valid? == false
-    self.status == "rejected"
-    return "Transaction rejected. Please check your account balance."
+      self.status = "rejected"
+      return "Transaction rejected. Please check your account balance."
   elsif
     self.status != "complete"
       self.receiver.balance = self.receiver.balance + self.amount
