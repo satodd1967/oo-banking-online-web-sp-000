@@ -38,6 +38,7 @@ def reverse_transfer
   self.sender.balance = self.sender.balance + self.amount
   self.status = "reversed"
 end
+end
 #binding.pry
 
 end
