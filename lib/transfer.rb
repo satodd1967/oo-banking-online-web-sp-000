@@ -19,11 +19,6 @@ def valid?
 end
 
 def execute_transaction
-  if self.status != "complete"
-    self.sender.status == "closed" || self.sender.balance < self.amount
-    self.status = "rejected"
-    return "Transaction rejected.  Please check your account balance."
-  else
     self.receiver.balance = self.receiver.balance + self.amount
     self.sender.balance = self.sender.balance - self.amount
     self.status = "complete"
