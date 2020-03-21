@@ -30,6 +30,6 @@ def execute_transaction
     self.status = "complete"
   end
 end
-binding.pry
+#binding.pry
 
 end
