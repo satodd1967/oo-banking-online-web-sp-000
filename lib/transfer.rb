@@ -26,6 +26,7 @@ def execute_transaction
   else
     return "rejected"
   end
+end
 #binding.pry
 
 end
