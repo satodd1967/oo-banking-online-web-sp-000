@@ -19,12 +19,12 @@ def valid?
 end
 
 def execute_transaction
-  if self.status != "complete" && self.sender.valid? = true
+  if self.status != "complete" && self.sender.valid? == true
       self.receiver.balance = self.receiver.balance + self.amount
       self.sender.balance = self.sender.balance - self.amount
       self.status = "complete"
     else
-      puts "Transaction rejected. Please check your account balance."
+      return "Transaction rejected. Please check your account balance."
   end
 end
 #binding.pry
