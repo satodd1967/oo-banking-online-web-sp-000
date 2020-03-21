@@ -24,6 +24,7 @@ def execute_transaction
     self.sender.balance = self.sender.balance - self.amount
     self.status = "complete"
   end
+end
 #binding.pry
 
 end
