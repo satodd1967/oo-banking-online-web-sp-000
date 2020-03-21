@@ -31,6 +31,9 @@ def execute_transaction
       self.status = "complete"
   end
 end
+
+def reverse_transfer
+end
 #binding.pry
 
 end
