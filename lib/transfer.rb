@@ -18,7 +18,7 @@ def valid?
   end
 end
 
-ddef execute_transaction
+def execute_transaction
   if self.status != "complete"
     self.receiver.balance = self.receiver.balance + self.amount
     self.sender.balance = self.sender.balance - self.amount
